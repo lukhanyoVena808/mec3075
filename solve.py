@@ -185,7 +185,7 @@ def apply_time_step(t: float,
 
     # kTn1 = hdt*Tn[n]
     A = sp.csc_matrix([k],dtype=int)
-    B = sp.csc_matrix([hdt*Tn[n]], dtype=int)
+    B = sp.csc_matrix([hdt*Tn[step]], dtype=int)
     Tn1 = solver(A, B)
    
         
